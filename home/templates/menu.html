@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Aroma | Menu</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background-color: #fdf8f3;
+            color: #333;
+        }
+
+        /* Navbar */
+        header {
+            background: #3e2723;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            color: #fff;
+            font-size: 28px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #ffcc80;
+        }
+
+        /* Section */
+        section {
+            padding: 60px 80px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 50px;
+            color: #3e2723;
+        }
+
+        /* Menu Category */
+        .menu-category {
+            margin-bottom: 50px;
+        }
+
+        .menu-category h3 {
+            font-size: 26px;
+            color: #3e2723;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #ff9800;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .menu-card {
+            background: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .menu-card h4 {
+            margin-bottom: 8px;
+            color: #3e2723;
+        }
+
+        .menu-card p {
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+
+        .menu-card span {
+            font-weight: bold;
+            color: #ff9800;
+            font-size: 16px;
+        }
+
+        /* Footer */
+        footer {
+            background: #3e2723;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Responsive */
+        @media(max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            section {
+                padding: 40px 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Café Aroma</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section>
+    <h2 class="section-title">Our Menu</h2>
+
+    <!-- Coffee -->
+    <div class="menu-category">
+        <h3>☕ Coffee</h3>
+        <div class="menu">
+            <div class="menu-card">
+                <h4>Espresso</h4>
+                <p>Strong & bold classic coffee</p>
+                <span>₹120</span>
+            </div>
+            <div class="menu-card">
+                <h4>Cappuccino</h4>
+                <p>Espresso with steamed milk</p>
+                <span>₹150</span>
+            </div>
+            <div class="menu-card">
+                <h4>Latte</h4>
+                <p>Smooth milk coffee</p>
+                <span>₹160</span>
+            </div>
+            <div class="menu-card">
+                <h4>Cold Coffee</h4>
+                <p>Chilled & creamy</p>
+                <span>₹180</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Snacks -->
+    <div class="menu-category">
+        <h3>🥪 Snacks</h3>
+        <div class="menu">
+            <div class="menu-card">
+                <h4>Veg Sandwich</h4>
+                <p>Fresh veggies & cheese</p>
+                <span>₹120</span>
+            </div>
+            <div class="menu-card">
+                <h4>Cheese Toast</h4>
+                <p>Crispy & cheesy</p>
+                <span>₹100</span>
+            </div>
+            <div class="menu-card">
+                <h4>French Fries</h4>
+                <p>Golden & crunchy</p>
+                <span>₹110</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Desserts -->
+    <div class="menu-category">
+        <h3>🍰 Desserts</h3>
+        <div class="menu">
+            <div class="menu-card">
+                <h4>Chocolate Muffin</h4>
+                <p>Soft & rich</p>
+                <span>₹90</span>
+            </div>
+            <div class="menu-card">
+                <h4>Brownie</h4>
+                <p>Chocolate overload</p>
+                <span>₹140</span>
+            </div>
+            <div class="menu-card">
+                <h4>Cheesecake</h4>
+                <p>Creamy delight</p>
+                <span>₹180</span>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Café Aroma | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
